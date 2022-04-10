@@ -114,7 +114,7 @@ public class PrintTest {
     @DisplayName("В строке с данными содержится пробел в конце строки. Данные не для печати.")
     @Description("В строке с данными содержится пробел в конце строки. Данные некорреткны для печати, строка содержит символа пробела в конце строки")
     public void containsSpacesSymbolTheEndInTheData() {
-        final String name = "Татьяна Рыбченко ";
+        final String name = "ТатьянаРыбченко ";
 
         Account account = new Account(name);
         boolean expectedData = false;
@@ -126,7 +126,7 @@ public class PrintTest {
     @DisplayName("В строке с данными содержится пробел в начале строки. Данные не для печати.")
     @Description("В строке с данными содержится пробел в начале строки. Данные некорреткны для печати, строка содержит символа пробела в начале строки")
     public void containsSpacesSymbolStartInTheData() {
-        final String name = " Татьяна Рыбченко";
+        final String name = " ТатьянаРыбченко";
 
         Account account = new Account(name);
         boolean expectedData = false;
@@ -147,6 +147,5 @@ public class PrintTest {
 
         assertEquals("Актуальные данные для печати, отличаются от ожидаемых: строка не пустая", expectedData, actualData);
     }
-
 
 }

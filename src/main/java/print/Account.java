@@ -8,7 +8,7 @@ public class Account {
     public Account(String name) {
     }
     @Step ("Данные передаваемые на принтер для печати: {name}")
-        public boolean checkNameToEmboss(String name) {
+        public boolean checkNameToEmboss( String name) {
         if (name.isBlank() ) {
             System.out.println("Данные не для печати, строка пустая");
             return false;
